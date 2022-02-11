@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    font-family: 'Kelly Slab', cursive;
+}
+p{
+    text-align: center;
+    color: green;
+    font-family: 'Kelly Slab', cursive;
+}
+.text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.conteneur{
+    border: 3px solid green;
+    margin-top: 100px;
+}
+img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@media (max-width:320px){
+}
