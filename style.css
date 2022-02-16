@@ -1,7 +1,8 @@
+/* General */
+
 body{
     background-color: black;
 }
-
 h1{
     text-align: center;
     color: red;
@@ -38,16 +39,18 @@ img {
 #balcon, #batimentD, #batimentG, #grue, #herbe, #pointe, #poteau{
     position: absolute;
     z-index: 100;
+    opacity: 0;
 }
 #balcon{
-    width: 5%;
+    width: 4.8%;
     top: 74.5%;
     right: 48%
 }
-#batimentD{
+#batimentD{                         /*A faire apparaitre contrairement aux autres */
     width: 1.5%;
     top: 80.6%;
     right: 31.3%;
+    opacity: 1;
 }
 #batimentG{
     width: 3.5%;
