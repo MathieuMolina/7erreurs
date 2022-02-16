@@ -28,14 +28,33 @@ let poteau = document.getElementById('poteau');
 // });
 
 
+let score = 0;
+
+let compteur = document.getElementById('compteur');
+console.log(compteur);
+
+let elt = document.getElementById("compteur");
+
+
+function addscore(){
+    score++;
+}
+function showscore(){
+    elt.textContent="Le score est : " +score+" sur "+parseInt(erreurs.length+1);
+}
+
+
 
 let erreurs = [balcon, batimentG, grue, herbe, pointe, poteau]
 for (let i=0; i < erreurs.length; i++){
     erreurs[i].addEventListener("click" , function(){
         opacityOne(erreurs[i]);
+        addscore();
+        showscore();
+        console.log(elt.textContent);
     });
 }
-
+// .removeEventListener();  ???????
 
 function opacityZero(param){
     param.style.opacity="0";
@@ -44,4 +63,7 @@ function opacityZero(param){
 let batimentD = document.getElementById('batimentD');
 batimentD.addEventListener("click" , function(){
     opacityZero(batimentD);
+    addscore();
+    showscore();
+    console.log(elt.textContent)
 });
